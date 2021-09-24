@@ -44,10 +44,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_IMRE_BOERSMA }}'
           channelId: live
           projectId: imre-boersma
-
-      - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit
-
-      - name: Run linter 👀
-        run: npm run lint
-
